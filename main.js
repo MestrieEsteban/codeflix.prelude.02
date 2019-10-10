@@ -8,6 +8,8 @@ const union         = require('./ex07')
 const intersection  = require('./ex08')
 const other         = require('./ex09')
 const index         = require('./ex10')
+const keys          = require('./ex12')
+const values        = require('./ex13')
 
 
 console.log('_____');
@@ -64,3 +66,7 @@ console.log('_____');
 
 console.log(index([5,12,35,45,14,50], 35))
 console.log(index([5,12,35,45,14,50], 99))
+
+console.log('_____');
+
+console.log(values({one: 1, two:2, three: 3}))
