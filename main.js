@@ -10,6 +10,8 @@ const other         = require('./ex09')
 const index         = require('./ex10')
 const keys          = require('./ex12')
 const values        = require('./ex13')
+const pairs         = require('./ex14')
+const invert        = require('./ex15')
 
 
 console.log('_____');
@@ -69,4 +71,16 @@ console.log(index([5,12,35,45,14,50], 99))
 
 console.log('_____');
 
+console.log(keys({one: 1, two:2, three: 3}))
+
+console.log('_____');
+
 console.log(values({one: 1, two:2, three: 3}))
+
+console.log('_____');
+
+console.log(invert({one: 1, two:2, three: 3}))
+
+console.log('_____');
+
+console.log(pairs({un: 1, deux:2, trois: 3}))

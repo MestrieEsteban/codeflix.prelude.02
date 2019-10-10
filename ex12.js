@@ -7,6 +7,6 @@ module.exports = function Keys(obj)
         
     }
     
-    return arr
+    return Object.keys(obj);
 
 }
