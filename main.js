@@ -6,6 +6,7 @@ const flatten       = require('./ex05')
 const without       = require('./ex06')
 const union         = require('./ex07')
 const intersection  = require('./ex08')
+const other         = require('./ex09')
 
 
 console.log('_____');
@@ -50,6 +51,5 @@ console.log(intersection([5,12,35,45,14,50], [5, 14 ,35]))
 
 console.log('_____');
 
-console.log(union([5,12,35,45,14,50], [35, 12 ,5000, 5], [200,800,500]))
-console.log(union([5,12,35,45,14,50], [45, 1 ,2]))
-console.log(union([5,12,35,45,14,50], [5, 14 ,35]))
+console.log(other([5,12,35,45,14,50], [35, 12 ,5000, 5], [200,800,500]))
+console.log(other([5,12,35,45,14,50], [45, 1 ,0, 50], [999]))
