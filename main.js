@@ -7,6 +7,7 @@ const without       = require('./ex06')
 const union         = require('./ex07')
 const intersection  = require('./ex08')
 const other         = require('./ex09')
+const index         = require('./ex10')
 
 
 console.log('_____');
@@ -53,3 +54,13 @@ console.log('_____');
 
 console.log(other([5,12,35,45,14,50], [35, 12 ,5000, 5], [200,800,500]))
 console.log(other([5,12,35,45,14,50], [45, 1 ,0, 50], [999]))
+
+console.log('_____');
+
+console.log(union([5,12,35,45,14,50], [35, 12 ,5000, 5], [200,800,500]))
+console.log(union([5,12,35,45,14,50], [45, 1 ,0, 50], [999]))
+
+console.log('_____');
+
+console.log(index([5,12,35,45,14,50], 35))
+console.log(index([5,12,35,45,14,50], 99))

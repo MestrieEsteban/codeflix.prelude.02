@@ -1,4 +1,4 @@
-module.exports = function without(...arrays) 
+module.exports = function union(...arrays) 
  {
     let present
     const first_tab = arrays[0]
