@@ -12,6 +12,11 @@ const keys          = require('./ex12')
 const values        = require('./ex13')
 const pairs         = require('./ex14')
 const invert        = require('./ex15')
+const mapfunction   = require('./ex21')
+//const omit         = require('./ex17')
+const size          = require('./ex19')
+const sample        = require('./ex20')
+
 
 
 console.log('_____');
@@ -84,3 +89,22 @@ console.log(invert({one: 1, two:2, three: 3}))
 console.log('_____');
 
 console.log(pairs({un: 1, deux:2, trois: 3}))
+
+console.log('_____');
+
+console.log(mapfunction({un: 1, deux:2, trois: 3}, function(num, key){return num * 3}))
+
+//console.log('_____');
+
+//console.log(omit({name: 'moe', age:50, userid: 'moe1'}, 'userid'))
+//console.log(omit({name: 'moe', age:50, userid: 'moe1'}, function(value, key, object){return _.isNumber(value)}))
+
+console.log('_____');
+
+console.log(size([30,20,15,20]))
+console.log(size({name: 'moe', age:50, userid: 'moe1'}))
+
+console.log('_____');
+
+console.log(sample([1,2,3,4]))
+console.log(sample([1,2,3,4], 3))
